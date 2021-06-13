@@ -20,6 +20,30 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'loki',
+    loadChildren: () => import('./series/loki/loki.module').then( m => m.LokiPageModule)
+  },
+  {
+    path: 'flash',
+    loadChildren: () => import('./series/flash/flash.module').then( m => m.FlashPageModule)
+  },
+  {
+    path: 'dados-serie',
+    loadChildren: () => import('./dados-serie/dados-serie.module').then( m => m.DadosSeriePageModule)
+  },
+  {
+    path: 'falcao',
+    loadChildren: () => import('./series/falcao/falcao.module').then( m => m.FalcaoPageModule)
+  },
+  {
+    path: 'superman',
+    loadChildren: () => import('./series/superman/superman.module').then( m => m.SupermanPageModule)
+  },
+  {
+    path: 'fear',
+    loadChildren: () => import('./series/fear/fear.module').then( m => m.FearPageModule)
   }
 ];
 @NgModule({
